@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="UTF-8">
+	<title>KHC Login</title>
+	<link rel="stylesheet" href="../css/auth.css">
+</head>
+
+<body>
+	<div class="signupSection">
+		<div class="info">
+			<h2>Keep your Assets</h2>
+			<i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
+			<p>The Way Is Here</p>
+		</div>
+
+		<div class="sign">
+			<ul class="loginTap">
+				<li>
+					<button id="signIn_Tap" onclick="setToSignIn()">Sign In</button>
+					<button id="signOut_Tap" onclick="setToSignUp()">Sign Up</button>
+				</li>
+			</ul>
+			<form action="login" method="POST" class="signinForm" id ="signinForm" name="signupform" display="none">
+				<h2 id="signTitle">Sign In</h2>
+				<ul class="noBullet">
+					<li>
+						<label for="email"></label>
+						<input type="email" class="inputFields" id="email" name="email" placeholder="Email" value="" required/>
+					</li>
+					<li>
+						<label for="password"></label>
+						<input type="password" class="inputFields" id="password" name="password" placeholder="Password" value="" oninput="return passwordValidation(this.value)" required/>
+					</li>
+					<li id="button">
+						<button type="submit" id="login_btn" formaction="login">login</button>
+						<!-- 						<input type="submit" id="signUp_btn" name="signUp" alt="signUp" value="Signup">-->					
+					</li>
+				</ul>
+			</form>
+			<form action="login" method="POST" class="signupForm" id ="signupForm" name="signupform" display="none">
+				<h2 id="signTitle">Sign Up</h2>
+				<ul class="noBullet">
+					<li>
+						<label for="email"></label>
+						<input type="email" class="inputFields" id="email" name="email" placeholder="Email" value="" required/>
+					</li>
+					<li>
+						<label for="password"></label>
+						<input type="password" class="inputFields" id="password" name="password" placeholder="Password" value="" oninput="return passwordValidation(this.value)" required/>
+					</li>
+					<li id="nameLabel">
+						<label for="nickname"></label>
+						<input type="text" class="inputFields" id="nickname" name="nickname" placeholder="Nickname" value="" oninput="return userNameValidation(this.value)" required/>
+					</li>
+
+					<li id="button">
+						<button type="submit" id="signUp_btn" formaction="signup">signUp</button>
+						<!-- 						<input type="submit" id="signUp_btn" name="signUp" alt="signUp" value="Signup">-->					
+					</li>
+				</ul>
+			</form>
+			
+			<a href="#" id="findPassword">
+				Forgot password?
+			</a>
+		</div>
+
+	</div>
+
+	<script src="../js/auth.js"></script>
+
+</body>
+</html>

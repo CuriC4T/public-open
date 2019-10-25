@@ -1,0 +1,29 @@
+{
+  "name": "khcproject",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "body-parser": "*",
+    "connect-ensure-login": "^0.1.1",
+    "connect-flash": "*",
+    "cookie-parser": "*",
+    "cookie-session": "*",
+    "ejs": "*",
+    "express": "*",
+    "express-session": "*",
+    "mail-listener2-updated": "*",
+    "moment": "^2.24.0",
+    "moment ": "*",
+    "moment-timezone": "^0.5.27",
+    "morgan": "^1.6.1",
+    "mysql": "*",
+    "mysql2": "^1.7.0",
+    "nan": "*",
+    "node-pre-gyp": "*",
+    "nodemailer": "*",
+    "passport": "*",
+    "passport-local": "*",
+    "screenshot-desktop": "*",
+    "sync-mysql": "^3.0.1"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "48760060163",
+    "firebase_url": "https://nanbada-cf404.firebaseio.com",
+    "project_id": "nanbada-cf404",
+    "storage_bucket": "nanbada-cf404.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48760060163:android:8442bbc2cdb7f93f761136",
+        "android_client_info": {
+          "package_name": "com.example.lenovo.NanBada"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "48760060163-gek995kspliu7dkpjhrvov63dard01jd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lenovo.NanBada",
+            "certificate_hash": "e53fbe6e1c82efb45e486b3a12e5b7993f0acedb"
+          }
+        },
+        {
+          "client_id": "48760060163-0dqksat9sik0jokim2u3l2hfv1g27nan.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6F53hpKVdAGllpp3-ulXIAfS4ByYaUEE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "48760060163-0dqksat9sik0jokim2u3l2hfv1g27nan.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

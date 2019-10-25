@@ -1,0 +1,8 @@
+﻿CREATE DATABASE nanbada DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE TABLE `admin_list` (
+  `idx` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(50) DEFAULT NULL,
+  `password` varchar(200) DEFAULT NULL,
+  `nickname` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`idx`)
+) DEFAULT CHARSET=utf8;

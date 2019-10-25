@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--group android:checkableBehavior="single"-->
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="홈" />
+        <item
+            android:id="@+id/nav_notice"
+            android:icon="@drawable/ic_lightbulb_outline_black_24dp"
+            android:title="알림" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_mail_outline_black_24dp"
+            android:title="고객 문의" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="공유" />
+
+    <!--/group-->
+
+    <item android:title="Emergency">
+        <menu>
+            <item
+                android:id="@+id/nav_declare"
+                android:icon="@drawable/ic_call_black_24dp"
+                android:title="자동 신고" />
+
+        </menu>
+    </item>
+
+</menu>

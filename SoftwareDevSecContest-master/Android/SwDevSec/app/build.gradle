@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.1"
+    defaultConfig {
+        applicationId "com.example.SwDevSec"
+        minSdkVersion 18
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+
+        release {
+
+            storeFile file('E:\\mykey.jks') // 기준은 App 폴더 기준이다.
+            storePassword "gura7036"
+            keyAlias "key1"
+            keyPassword "gura7036"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+//    packagingOptions {
+//        exclude 'lib/x86_64/darwin/libscrypt.dylib'
+//        exclude 'lib/x86_64/freebsd/libscrypt.so'
+//        exclude 'lib/x86_64/linux/libscrypt.so'
+//    }
+//    splits {
+//        abi {
+//            enable true
+//            reset()
+//            include 'x86', 'x86_64', 'armeabi', 'armeabi-v7a', 'mips', 'mips64', 'arm64-v8a'
+//            universalApk false
+//        }
+//    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    /*재욱*/
+    implementation files('src\\main\\jniLibs\\libDaumMapAndroid.jar')
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation "com.squareup.okhttp3:okhttp:3.9.0"
+    implementation 'com.kakao.sdk:kakaonavi:' + KAKAO_SDK_VERSION
+    //compile group: 'com.kakao.sdk', name: 'kakaonavi', version: KAKAO_SDK_VERSION
+    /*유철*/
+    implementation 'com.google.code.gson:gson:2.8.5'
+}

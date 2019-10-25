@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background: #111;
+	background-repeat: no-repeat;
+}
+
+.signupSection {
+	background: url(https://source.unsplash.com/TV2gg2kZD1o/1600x800);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 800px;
+	height: 500px;
+	text-align: center;
+	display: flex; /*수평 정렬*/
+	color: white;
+	box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, 0.5);
+}
+.info {
+	width: 45%;
+	background: rgba(20, 20, 20, 0.8);
+	padding: 30px 0;
+	border-right: 5px solid rgba(30, 30, 30, 0.8);
+}
+.info h2 {
+	padding-top: 30px;
+	font-weight: 300;
+}
+.info p {
+	font-size: 18px;
+}
+.sign{
+	width: 70%;
+	padding: 30px 100;
+	background: rgba(20, 40, 40, 0.8);
+	transition: .2s;
+
+}
+
+.sign h2 {
+	font-weight: 500;
+}
+.noBullet {
+	list-style-type: none;
+	padding: 0;
+}
+.sign .inputFields {
+	margin: 15px 0;
+	font-size: 16px;
+	padding: 10px;
+	width: 250px;
+	border: 1px solid #0ab4b4;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	background: rgba(20, 20, 20, 0.2);
+	color: white;
+	outline: none;
+}
+.loginTap{
+	list-style-type: none;
+	padding: 0;
+}
+#login_btn {
+	border: 1px solid #0ab4b4;
+	background: rgba(20, 20, 20, 0.6);
+	font-size: 18px;
+	color: white;
+	margin-top: 20px;
+	padding: 10px 50px;
+	cursor: pointer;
+	transition: .4s;
+}
+#login_btn:hover {
+	background: rgba(20, 20, 20, 0.8);
+	padding: 10px 80px;
+}
+#signUp_btn {
+	border: 1px solid #0ab4b4;
+	background: rgba(20, 20, 20, 0.6);
+	font-size: 18px;
+	color: white;
+	margin-top: 20px;
+	padding: 10px 50px;
+	cursor: pointer;
+	transition: .4s;
+}
+#signUp_btn:hover {
+	background: rgba(20, 20, 20, 0.8);
+	padding: 10px 80px;
+}
+#signIn_Tap {
+	background: none;
+	color: #ccc;
+	width: 120px;
+	height: 50px;
+	border: 1px solid #338033;
+	font-size: 18px;
+	border-radius: 4px;
+	transition: .6s;
+	overflow: hidden;
+
+}
+#signOut_Tap {
+	background: none;
+	color: #ccc;
+	width: 120px;
+	height: 50px;
+	border: 1px solid #338033;
+	font-size: 18px;
+	border-radius: 4px;
+	transition: .6s;
+	overflow: hidden;
+
+}
+
+
+
+
+
+#signIn_Tap:hover {
+   background: rgba(20, 20, 20, 0.8);
+	
+}
+#signOut_Tap:hover {
+   background: rgba(20, 20, 20, 0.8);
+	
+}
+#findPassword{
+	color: #999999;
+	
+	font-size: 15px;
+
+}
+
+
